@@ -23,5 +23,5 @@ git commit -m "example comment to describe changes"
 git push origin main  
 ```  
   
-**NOTE:** If your branch is not named *main*, then use the name of your branch
+**NOTE:** If your branch is not named *main*, then use the name of your branch  
 **TIP:** Use `git commit -a` to be able to write multi-line comments! Just make sure that you set `git config --global core.editor <your_favourite_editor_goes_here>`
