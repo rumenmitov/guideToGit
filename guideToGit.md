@@ -3,8 +3,8 @@ Create a key: `ssh-keygen -t rsa -b 4096 -C "example@email.com"`
 Activate the key (make sure that you are using **bash**): `eval "$(ssh-agent -s)"`  
 Insert this in *~/.ssh/config*:  
 ```  
-Host *
- AddKeysToAgent yes
+Host *  
+ AddKeysToAgent yes  
  IdentityFile ~/.ssh/id_rsa  
 ```  
 Run the key: `ssh-add ~/.ssh/id_rsa`  
@@ -18,10 +18,11 @@ Check connection: `ssh -T git@github.com`
 # How to Push Changes (using the Git method):  
 ```  
 cd <example_repository_goes_here>  
-git add .
-git commit -m "example comment to describe changes"
+git add .  
+git commit -m "example comment to describe changes"  
 git push origin main  
 ```  
   
 **NOTE:** If your branch is not named *main*, then use the name of your branch  
-**TIP:** Use `git commit -a` to be able to write multi-line comments! Just make sure that you set `git config --global core.editor <your_favourite_editor_goes_here>`
+**TIP:** Use `git commit -a` to be able to write multi-line comments! Just make sure that you set:  
+`git config --global core.editor <your_favourite_editor_goes_here>`
