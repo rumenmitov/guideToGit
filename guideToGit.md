@@ -9,7 +9,7 @@ Host *
 ```  
 Run the key: `ssh-add ~/.ssh/id_rsa`  
 Go to GitHub (in the SSH and GPG Keys section) and create a new SSH key using the contents of the *id_rsa.pub* file  
-**NOTE:** If you named your file something other than the default (*id_rsa*), then just use the name of your file
+**NOTE:** If you named your file something other than the default (*id_rsa*), then just use the name of your file  
 Check connection: `ssh -T git@github.com`  
   
 # How to Pull Repository (using the Git method):  
